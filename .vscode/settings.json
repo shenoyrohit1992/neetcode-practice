@@ -7,6 +7,6 @@
     "python.pyrefly.typeCheckingMode": "off",
     "ruff.enable": false,
     "python.analysis.extraPaths": [
-        "arrays"
+        "pointers"
     ]
 }
