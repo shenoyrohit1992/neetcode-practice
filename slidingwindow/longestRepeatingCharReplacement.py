@@ -8,7 +8,7 @@ class Solution:
         for r in range(len(s)):
             countMap[s[r]] = 1 + countMap.get(s[r], 0)
 
-            # invalid window - breaking condition
+            # invalid window - breaking condition: are we over limit of replaceable chars?
             while (r - l + 1) - max(countMap.values()) > k:
                 countMap[s[l]] = countMap[s[l]] - 1
                 l += 1

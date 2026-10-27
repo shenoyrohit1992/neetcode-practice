@@ -3,6 +3,7 @@ class Solution:
         res = []
         nums.sort()
 
+        # we need only unique i's, so that i-j-k doesn't duplicate for same i's
         for ind, num in enumerate(nums):
             if ind > 0 and nums[ind] == nums[ind - 1]:
                 continue

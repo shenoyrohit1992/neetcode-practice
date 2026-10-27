@@ -1,5 +1,9 @@
 {
-    "editor.quickSuggestions": false,
+    "editor.quickSuggestions": {
+        "comments": "off",
+        "strings": "off",
+        "other": "off"
+    },
     "editor.suggestOnTriggerCharacters": false,
     "editor.inlineSuggest.enabled": false,
     "python.pyrefly.disableLanguageServices": true,
@@ -7,6 +11,6 @@
     "python.pyrefly.typeCheckingMode": "off",
     "ruff.enable": false,
     "python.analysis.extraPaths": [
-        "arrays"
+        "pointers"
     ]
 }

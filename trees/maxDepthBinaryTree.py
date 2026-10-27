@@ -22,6 +22,7 @@ class Solution:
         return findDepthOfNode(root)
 
     def maxDepthBFS(self, root: TreeNode) -> int:
+        # Level order traversal of tree
         if not root:
             return 0
 

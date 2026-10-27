@@ -8,7 +8,6 @@ class Solution:
             currentSum = numbers[l] + numbers[r]
             if currentSum == target:
                 return [l + 1, r + 1]
-                break
             elif currentSum > target:
                 r -= 1
             else:
