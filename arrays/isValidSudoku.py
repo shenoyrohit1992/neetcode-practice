@@ -1,4 +1,4 @@
-import collections
+from collections import defaultdict
 
 
 class Solution:
@@ -6,9 +6,9 @@ class Solution:
         ROWS = len(board) - 1
         COLS = len(board[0]) - 1
 
-        rows = collections.defaultdict(set)
-        cols = collections.defaultdict(set)
-        squares = collections.defaultdict(set)  # key = (r // 3, c // 3)
+        rows = defaultdict(set)
+        cols = defaultdict(set)
+        squares = defaultdict(set)  # key = (r // 3, c // 3)
 
         for r in range(ROWS):
             for c in range(COLS):
